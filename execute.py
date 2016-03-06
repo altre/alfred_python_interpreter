@@ -3,11 +3,7 @@ from workflow import Workflow
 from cStringIO import StringIO
 
 try:
-    import numpy as np
-except ImportError:
-    pass
-try:
-    from matplotlib.pyplot import *
+    from numpy import *
 except ImportError:
     pass
 from math import *
