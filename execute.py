@@ -5,6 +5,8 @@ from math import *
 from random import *
 from re import *
 from calendar import *
+from os.path import *
+from shutil import *
 
 import contextlib
 @contextlib.contextmanager
@@ -27,15 +29,15 @@ def main(wf):
     answer = None
     with capture() as out:
         try:
-            answer = eval(command)
-        except SyntaxError:
             try:
+                answer = eval(command)
+            except SyntaxError:
                 exec(command)
-            except Exception as e:
-                answer = str(e)
+        except Exception as e:
+            answer = str(e)
     if not answer:
         answer = out[0]
-    wf.add_item(title=str(answer), subtitle=command, valid=True)
+    wf.add_item(title=str(answer), subtitle="Press enter to copy to clipboard.", arg=str(answer), valid=True)
     wf.send_feedback()
 
 if __name__ == "__main__":
