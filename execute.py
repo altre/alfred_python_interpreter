@@ -1,12 +1,24 @@
 import sys
 from workflow import Workflow
 from cStringIO import StringIO
+
+try:
+    import numpy as np
+except ImportError:
+    pass
+try:
+    from matplotlib.pyplot import *
+except ImportError:
+    pass
 from math import *
 from random import *
 from re import *
 from calendar import *
 from os.path import *
 from shutil import *
+from json import *
+from time import *
+from macostools import *
 
 import contextlib
 @contextlib.contextmanager
