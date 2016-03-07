@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>python_interpreter</string>
+	<string>com.altre.python_interpreter</string>
 	<key>connections</key>
 	<dict>
 		<key>6A344E57-16C8-4F5D-9D5D-8A11106D2B6A</key>
