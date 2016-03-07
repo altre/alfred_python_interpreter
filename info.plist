@@ -32,65 +32,13 @@
 	<key>createdby</key>
 	<string>altre</string>
 	<key>description</key>
-	<string>Enter one-line python commands</string>
+	<string>Power of Python at your fingertips</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Python interpreter</string>
+	<string>Python Interpreter</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>python
-try:
-    from numpy import *
-except ImportError:
-    pass
-from math import *
-from random import *
-from re import *
-from calendar import *
-from os.path import *
-from shutil import *
-from json import *
-from time import *
-from macostools import *
-import os
-os.system('cls' if os.name == 'nt' else 'clear')
-{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>3177CF13-43E3-4EBD-94FC-5946647DB5CC</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>pt</string>
-				<key>subtext</key>
-				<string>in terminal</string>
-				<key>text</key>
-				<string>Start python interpreter</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6A344E57-16C8-4F5D-9D5D-8A11106D2B6A</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -143,6 +91,58 @@ os.system('cls' if os.name == 'nt' else 'clear')
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>python
+try:
+    from numpy import *
+except ImportError:
+    pass
+from math import *
+from random import *
+from re import *
+from calendar import *
+from os.path import *
+from shutil import *
+from json import *
+from time import *
+from macostools import *
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>3177CF13-43E3-4EBD-94FC-5946647DB5CC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>pt</string>
+				<key>subtext</key>
+				<string>in terminal</string>
+				<key>text</key>
+				<string>Run in python interpreter</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6A344E57-16C8-4F5D-9D5D-8A11106D2B6A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -151,22 +151,22 @@ os.system('cls' if os.name == 'nt' else 'clear')
 		<key>3177CF13-43E3-4EBD-94FC-5946647DB5CC</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>260</real>
 		</dict>
 		<key>6A344E57-16C8-4F5D-9D5D-8A11106D2B6A</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>260</real>
 		</dict>
 		<key>728C312B-DDD8-4AD8-9C97-72347D9FE0F6</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>30</real>
 		</dict>
 		<key>A0C2BD60-2C4F-4EE5-8143-A49891287F49</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>30</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
