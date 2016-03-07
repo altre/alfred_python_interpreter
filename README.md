@@ -11,5 +11,7 @@ This workflow automatically imports the following standard libraries as star-imp
 Furthermore it attempts to import numpy as star import
 and ignores it silently if not installed.
 
+Download workflow file to install easily.
+
 ![Usage]
 (https://github.com/altre/alfred_python_interpreter/blob/master/screenshot.gif)
