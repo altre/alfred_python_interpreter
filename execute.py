@@ -43,8 +43,11 @@ def main(wf):
                 exec(command)
         except Exception as e:
             answer = str(e)
-    if not answer:
-        answer = out[0]
+    if answer is None:
+        if not out[0]:
+            answer = "None"
+        else:
+            answer = out[0]
     wf.add_item(title=str(answer), subtitle="Press enter to copy to clipboard.", arg=str(answer), valid=True)
     wf.send_feedback()
 
