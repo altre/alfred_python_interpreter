@@ -2,6 +2,7 @@ import sys
 from workflow import Workflow
 from cStringIO import StringIO
 
+import __builtin__
 try:
     from numpy import *
 except ImportError:
@@ -37,10 +38,7 @@ def main(wf):
     answer = None
     with capture() as out:
         try:
-            try:
-                answer = eval(command)
-            except SyntaxError:
-                exec(command)
+            answer = eval(__builtin__.compile(command, '<string>', 'single'))
         except Exception as e:
             answer = str(e)
     if answer is None:
